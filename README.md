@@ -9,9 +9,9 @@ An [instance](https://blyzp.github.io/sign-up-form/) of the project [*Sign-up Fo
 
 1. Set up your HTML and CSS files with some simple dummy content, just to make sure you have everything linked correctly.
 
-2. Set up your git repository (refer to past projects if you need a refresher).
+2. Set up your Git repository (refer to past projects if you need a refresher).
 
-3. Download a full-resolution copy of [the design file](https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/sign-up-form.png), and get a general idea for how you’re going to need to lay things out in your HTML document.
+3. Download a full-resolution copy of the [project design file](https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/sign-up-form.png), and get a general idea for how you’re going to need to lay things out in your HTML document.
 
 ### Step 2: Gather assets
 
