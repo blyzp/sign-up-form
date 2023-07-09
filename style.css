@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+:root {
+    --left-width: 25vw;
+    --h1-width: 50vw;
+    --field-width: 40vw;
+}
+
+body {
+    color: #666666;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+
+    background-color: #f8f8f8;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: slategray;
+}
+
+.left {
+    display: flex;    
+    flex-direction: column;
+
+    background-color: slategray;
+    background-image: url(image.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.right {
+    text-align: center;
+}
+
+
+/* Left */
+
+.logo {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    padding-top: 15px;
+    
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family: 'Sacramento', serif;
+    font-size: 4rem;
+}
+
+.logo img {
+    margin-left: 10px;
+    height: 64px;
+
+}
+
+.attribution {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 0.7rem;
+    text-align: right;
+    padding: 5px;
+}
+
+.attribution a {
+    color: white;
+}
+
+
+/* Right */
+
+h1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+
+h1:first-of-type {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+h1:last-of-type {
+    padding-bottom: 20px;
+}
+
+h1::first-letter {
+    font-family: 'Sacramento', serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+.field {
+    flex-direction: row;
+    padding-bottom: 10px;
+
+    background-color: white;
+    box-shadow: 5px 5px 5px #cccccc;
+}
+
+fieldset {
+    border-width: 0px;
+}
+
+fieldset div {
+    padding-bottom: 25px;
+}
+
+legend {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 20px;
+
+    color: slategray;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+legend::first-letter {
+    font-family: 'Sacramento', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+input {
+    height: 25px;
+    width: 250px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: slateblue;
+    box-shadow: 2px 2px 2px #dddddd;
+}
+
+input:invalid, .error {
+    border-color: darkred;
+}
+
+.error-name, .error-mail, .error-pass {
+    display: block;
+
+    color: darkred;
+    font-size: 0.8rem;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 30px;
+
+    background-color: slategray;
+    border-radius: 5px;
+    border-width: 0px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+p {
+    padding-bottom: 25px;
+
+    font-size: 1rem;
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 750px) {
+    body {
+        flex-direction: row;
+    }   
+
+    .left {
+        width: var(--left-width);
+    }
+
+    .right {
+        width: calc(100vw - var(--left-width));
+        height: 100vh;
+        overflow-y: scroll;
+
+        text-align: left;
+    }
+
+    
+    .logo {
+        margin-top: 20vh;
+        padding: 10px;
+    }
+
+    .attribution {
+        margin-top: auto;
+
+        background-color: transparent;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    
+    h1 {
+        width: var(--h1-width);
+    }
+
+    h1:first-of-type {
+        padding-top: 40px;
+    }
+
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: var(--field-width);
+        
+        padding-left: 50px;
+    }
+
+    fieldset div {
+        padding-bottom: 15px;
+    }
+ 
+    legend {
+        margin: 0px;
+    }
+
+    input {
+        width: 225px;
+    }
+
+    button, p {
+        margin-left: 50px;
+    }
+}
